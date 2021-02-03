@@ -1,4 +1,4 @@
 import maya.utils
-from Example import MainWindow
+import Example
 
-maya.utils.executeDeferred(MainWindow.setup)
+maya.utils.executeDeferred(Example.setup)
