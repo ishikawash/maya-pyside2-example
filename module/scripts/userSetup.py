@@ -1,4 +1,4 @@
 import maya.utils
-from Example import Widgets
+from Example import MainWindow
 
-maya.utils.executeDeferred(Widgets.setup)
+maya.utils.executeDeferred(MainWindow.setup)
