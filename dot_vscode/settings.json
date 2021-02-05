@@ -2,7 +2,8 @@
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
     "python.autoComplete.extraPaths": [
-        "modules\\python",
-        "C:\\Program Files\\Autodesk\\Maya2020\\Python\\Lib\\site-packages",
-    ]
+        "${env:MAYA_LOCATION}\\Python\\Lib\\site-packages",
+        "${env:MAYA_LOCATION}\\lib"
+    ],
+    "python.pythonPath": "${env:MAYA_LOCATION}\\bin\\mayapy.exe"
 }
