@@ -1,8 +1,12 @@
 {
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
+    "python.linting.pylintArgs": [
+        "--load-plugins=PySide2,shiboken2",
+    ],
     "python.autoComplete.extraPaths": [
         "${env:MAYA_LOCATION}\\Python\\Lib\\site-packages",
+        "${env:MAYA_LOCATION}\\Python\\Lib\\site-packages\\pymel\\core",
         "${env:MAYA_LOCATION}\\lib"
     ],
     "python.pythonPath": "${env:MAYA_LOCATION}\\bin\\mayapy.exe"
